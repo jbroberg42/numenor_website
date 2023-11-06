@@ -1,0 +1,108 @@
+@font-face {
+    font-family: dragonlord;
+    src: url(fonts/dragonlord-font/DragonlordPersonalUseOnlyRegular-PKxzm.otf);
+}
+
+@font-face {
+    font-family: morris-roman-black;
+    src: url(fonts/morris-roman/MorrisRoman-Black.ttf);
+}
+
+:root {
+    --canvaDarkBlue: #050a30;
+    --canvaNavyBlue: #000c66;
+    --canvaBlue: #0000ff;
+    --canvaBabyBlue: #7ec8e3;
+    --0: rgb(220, 231, 236);
+    --1: rgb(47, 45, 36);
+    --2: rgb(139, 153, 155);
+    --3: rgb(192, 207, 214);
+    --4: rgb(100, 95, 79);
+}
+
+
+html { 
+    background: url(images/background3.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    /* this took forever to figure out omg i couldn't figure out how to get the body background-color to not be white*/
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-size: 10em;
+    color: rgb(255, 238, 0);
+    font-family: dragonlord;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+  h1 {
+    font-size: 15em;
+  }
+
+.container {
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+hr {
+    margin: 20px auto;
+    color: goldenrod;
+    border: 3px solid goldenrod;
+    max-width: 65px;
+    opacity: 1;  
+}
+
+.btn {
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: solid goldenrod;
+    text-transform: uppercase;
+    font-family: morris-roman-black;
+    position: relative;
+}
+
+.btn-dark {
+    background-color: var(--4);
+    transition: all .5s;
+    box-shadow: 0px 0px 5px 0px goldenrod;
+    position: relative;
+    margin-top: 100px;
+    
+}
+
+.btn-dark:hover {
+    background-color: goldenrod;
+    border: solid goldenrod;
+    box-shadow: 0px 0px 50px 0px goldenrod;
+
+}
+
+.btn-xl {
+    padding: 1rem 2rem;
+}
+
+.textbox {
+    background-color: rgba(218, 165, 32, 0.749);
+    width: 1000px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: goldenrod 0px 0px 20px 0px;
+    
+}
